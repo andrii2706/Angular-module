@@ -5,16 +5,19 @@ import {Observable} from "rxjs";
 import {IUser} from "../../Model/users-model/IUser.Modal";
 
 @Injectable({
-  providedIn:root
+  providedIn: root
 })
 export class UserService {
   private url = 'https://jsonplaceholder.typicode.com/users'
-constructor(private httpClient: HttpClient) {
-}
-getAllUsers(): Observable<IUser[]>{
+
+  constructor(private httpClient: HttpClient) {
+  }
+
+  getAllUsers(): Observable<IUser[]> {
     return this.httpClient.get<IUser[]>(this.url)
-}
-getUsersById(id:number): Observable<IUser>{
-    return this.httpClient.get<IUser>(this.url+'/'+id)
-}
+  }
+
+  getUsersById(id: number): Observable<IUser> {
+    return this.httpClient.get<IUser>(this.url + '/' + id)
+  }
 }
