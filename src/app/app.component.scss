@@ -1,0 +1,15 @@
+.title{
+  margin: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  h1{
+    width: 25%;
+    padding: 2.5rem;
+    font-family: Candara, sans-serif;
+    text-align: center;
+    border: 2px solid tomato;
+    border-radius: 75%;
+  }
+}
