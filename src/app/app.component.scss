@@ -1,0 +1,32 @@
+.wrap-info{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: #6a6a89;
+  h2{
+    padding: 1.5rem;
+  border: 2px dashed lightgray ;
+    border-radius: 15px;
+    color: white;
+  }
+  p{  padding: 1.5rem;
+    border: 2px dashed lightgray ;
+    border-radius: 15px;
+    color: white;}
+}
+.route{
+  height: auto ;
+  text-align: center;
+  justify-content: space-around;
+  a{
+    font-size: 15px;
+    color: cornflowerblue;
+    text-decoration: none;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border: 1px solid tomato;
+    background: tomato;
+    border-radius: 50%;
+  }
+}
+
