@@ -1,0 +1,6 @@
+<h2>Json Users</h2>
+<div *ngIf="selected">
+<app-user-details></app-user-details>
+</div>
+<app-user *ngFor="let user of users" [user]="user" (data)="catchInfo($event)"></app-user>
+
