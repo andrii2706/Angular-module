@@ -1,5 +1,5 @@
 <div
-class="wrap-info">
+  class="wrap-info">
   <h2>{{title}}</h2>
 </div>
 <div class="wrap-info margin">
@@ -9,7 +9,8 @@ class="wrap-info">
 >{{info}}</p
 ></div>
 <div>
-  <app-form></app-form>
+  <app-form (data)="getUser($event)"></app-form>
+  <app-user [user]="user"></app-user>
 </div>
 
 

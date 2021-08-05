@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {IUser} from "./model/IUser";
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,9 @@ export class AppComponent {
     ' будут все имена юзеров с jsonPlaceHolder при выборе определенного юзера ' +
     'и нажитии кнопки происходит  submit выводится подробная инфа про юзераСледом' +
     ' все то же самое, только через reactive form'
+  user: IUser;
+
+  getUser(user: IUser) {
+    this.user = user
+  }
 }
