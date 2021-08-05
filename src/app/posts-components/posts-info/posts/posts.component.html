@@ -1,0 +1,5 @@
+<h2>Json Posts</h2>
+<div *ngIf="selected">
+  <router-outlet></router-outlet>
+</div>
+<app-post *ngFor="let post of posts" [post]="post" (data)="catchInfo($event)"></app-post>

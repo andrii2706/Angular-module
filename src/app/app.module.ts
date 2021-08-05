@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import {UserModule} from "./user-components/user/user.module";
 import {RouterModule} from "@angular/router";
+import {PostsModule} from "./posts-components/posts/posts.module";
 
 @NgModule({
   declarations: [
@@ -11,9 +12,9 @@ import {RouterModule} from "@angular/router";
   ],
   imports: [
     BrowserModule,
-    UserModule,
     RouterModule.forRoot([
-      {path: 'users', loadChildren: () => import('./user-components/user/user.module').then(m=>m.UserModule)}
+      {path: 'users', loadChildren: () => import('./user-components/user/user.module').then(m=>m.UserModule)},
+      {path: 'posts', loadChildren: () => import('./posts-components/posts/posts.module').then(m=>m.PostsModule)}
     ])
   ],
   providers: [],
