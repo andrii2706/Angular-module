@@ -3,8 +3,10 @@ export interface IUser {
   name: string,
   username: string,
   email: string,
-  address: {
-    city: string,
-    street: string
-  }
+  address: Address,
+  website: string
+}
+interface Address {
+  city: string,
+  street: string
 }
