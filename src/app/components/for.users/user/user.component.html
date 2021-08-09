@@ -1,0 +1,29 @@
+<div class="info">
+  <h3>User Info</h3>
+  <h3>{{user.name}} --- {{user.id}}</h3>
+  <h4>{{user.username}}</h4>
+  <h5>{{user.email}}</h5>
+  <ul>
+    <li>{{user.address.street}}</li>
+    <li>{{user.address.city}}</li>
+    <li>{{user.address.zipcode}}</li>
+    <li>{{user.address.suite}}</li>
+  </ul>
+  <ul>
+    <li>User geo - {{user.address.geo.lat}}</li>
+    <li>User geo - {{user.address.geo.lng}}</li>
+  </ul>
+  <p>
+    User phone number -
+    {{user.phone}}
+  </p>
+  <p>
+    User website -
+    {{user.website}}
+  </p>
+  <ul>
+    <li>{{user.company.bs}}</li>
+    <li>{{user.company.catchPhrase}}</li>
+    <li>{{user.company.name}}</li>
+  </ul>
+</div>

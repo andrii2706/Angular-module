@@ -1,0 +1,37 @@
+$font-size : 25px;
+$familia : "Bookman Old Style" , sans-serif;
+$padding : 10px;
+.info{
+  width: 450px;
+  height: auto;
+  margin: 25px;
+  padding: $padding;
+  border: 3px dashed tomato;
+  h3{
+  font-size: $font-size;
+    font-family: "Bookman Old Style", sans-serif;
+  }
+  h4{
+    font-size: $font-size;
+    font-family: $familia;
+  }
+  h5{
+    font-size: $font-size;
+    font-family: $familia;
+  }
+  ul{
+    list-style: none;
+    border: 2px dashed cornflowerblue;
+    border-radius: 12px;
+    padding: $padding;
+  }
+  li{
+    font-family: $familia;
+  }
+  p{
+    padding: 10px;
+  margin: 40px;
+    border: 5px solid coral;
+    border-radius: 25px;
+  }
+}

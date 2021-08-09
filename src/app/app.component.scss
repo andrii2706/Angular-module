@@ -1,0 +1,32 @@
+html{
+margin: 0;
+  padding: 0;
+}
+
+.header{
+  border-bottom: 5px dashed tomato ;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+.links{
+  display: flex;
+  justify-content: space-around;
+  margin: 45px;
+  a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    background: coral;
+    border:2px solid coral;
+    padding: 10px;
+    border-radius: 12px;
+  &:hover{
+    background: red;
+    color: white;
+  }
+
+  }
+
+}
+
