@@ -1,1 +1,5 @@
-<p>coments works!</p>
+<h2>All comments</h2>
+<app-coment *ngFor="let coment of comments
+| paginate: { itemsPerPage: 10, currentPage: page }
+"[coment]="coment"></app-coment>
+<pagination-controls (pageChange)="page = $event"></pagination-controls>

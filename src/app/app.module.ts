@@ -11,6 +11,7 @@ import { ComentComponent } from './components/for.comentars/coment/coment.compon
 import { ComentsComponent } from './components/for.comentars/coments/coments.component';
 import {HttpClientModule} from "@angular/common/http";
 import {RouterModule, Routes} from "@angular/router";
+import {NgxPaginationModule} from "ngx-pagination";
 
 let routes: Routes =[
   {path:'users', component: UsersComponent},
@@ -28,11 +29,12 @@ let routes: Routes =[
     ComentComponent,
     ComentsComponent
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    RouterModule.forRoot(routes)
-  ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        RouterModule.forRoot(routes),
+        NgxPaginationModule
+    ],
   providers: [UserService],
   bootstrap: [AppComponent]
 })
